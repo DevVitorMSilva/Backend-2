@@ -12,7 +12,7 @@ try {
         email: 'vitor@gmail.com',
         senha: 'gaby123',
     })
-    console.log('Usuário inserido com sucesso: '. novoUsuario.toJSON())
+    console.log('Usuário inserido com sucesso: ', novoUsuario.toJSON())
 
     const usuarios = await Usuario.findAll();
     console.log('Lista de Usuários ', usuarios.map((u) => u.toJSON()));
